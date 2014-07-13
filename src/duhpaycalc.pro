@@ -4,7 +4,11 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
+
+QMAKE_CXXFLAGS += -std=c++11
+
+INCLUDEPATH += c:/_dev/_boost/boost_1_55_0
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
